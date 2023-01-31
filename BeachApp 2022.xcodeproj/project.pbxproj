@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		63FAF0B129892965005A6E3E /* BeachApp_2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0B029892965005A6E3E /* BeachApp_2022App.swift */; };
-		63FAF0B329892965005A6E3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0B229892965005A6E3E /* ContentView.swift */; };
+		63FAF0B329892965005A6E3E /* TabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0B229892965005A6E3E /* TabRootView.swift */; };
 		63FAF0B529892969005A6E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF0B429892969005A6E3E /* Assets.xcassets */; };
 		63FAF0B829892969005A6E3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FAF0B729892969005A6E3E /* Preview Assets.xcassets */; };
+		63FAF0C429892C36005A6E3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0C329892C36005A6E3E /* Extensions.swift */; };
+		63FAF0C629892C74005A6E3E /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0C529892C74005A6E3E /* AppDataService.swift */; };
+		63FAF0C829892C8D005A6E3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0C729892C8D005A6E3E /* User.swift */; };
+		63FAF0CA29892C92005A6E3E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0C929892C92005A6E3E /* Player.swift */; };
+		63FAF0CC29892CA5005A6E3E /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0CB29892CA4005A6E3E /* Tournament.swift */; };
+		63FAF0CE29892CE0005A6E3E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF0CD29892CE0005A6E3E /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63FAF0AD29892965005A6E3E /* BeachApp 2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeachApp 2022.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FAF0B029892965005A6E3E /* BeachApp_2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachApp_2022App.swift; sourceTree = "<group>"; };
-		63FAF0B229892965005A6E3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63FAF0B229892965005A6E3E /* TabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootView.swift; sourceTree = "<group>"; };
 		63FAF0B429892969005A6E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FAF0B729892969005A6E3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63FAF0C329892C36005A6E3E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		63FAF0C529892C74005A6E3E /* AppDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		63FAF0C729892C8D005A6E3E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63FAF0C929892C92005A6E3E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		63FAF0CB29892CA4005A6E3E /* Tournament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		63FAF0CD29892CE0005A6E3E /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				63FAF0B029892965005A6E3E /* BeachApp_2022App.swift */,
-				63FAF0B229892965005A6E3E /* ContentView.swift */,
+				63FAF0BF29892BD8005A6E3E /* Models */,
+				63FAF0BE29892BD1005A6E3E /* Views */,
+				63FAF0C029892BE0005A6E3E /* ViewModels */,
+				63FAF0C129892BFB005A6E3E /* Services */,
+				63FAF0C229892C06005A6E3E /* Utilities */,
 				63FAF0B429892969005A6E3E /* Assets.xcassets */,
 				63FAF0B629892969005A6E3E /* Preview Content */,
 			);
@@ -65,6 +81,48 @@
 				63FAF0B729892969005A6E3E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63FAF0BE29892BD1005A6E3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF0B229892965005A6E3E /* TabRootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63FAF0BF29892BD8005A6E3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF0C729892C8D005A6E3E /* User.swift */,
+				63FAF0C929892C92005A6E3E /* Player.swift */,
+				63FAF0CD29892CE0005A6E3E /* Team.swift */,
+				63FAF0CB29892CA4005A6E3E /* Tournament.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63FAF0C029892BE0005A6E3E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		63FAF0C129892BFB005A6E3E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF0C529892C74005A6E3E /* AppDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63FAF0C229892C06005A6E3E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF0C329892C36005A6E3E /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FAF0B329892965005A6E3E /* ContentView.swift in Sources */,
+				63FAF0CC29892CA5005A6E3E /* Tournament.swift in Sources */,
+				63FAF0B329892965005A6E3E /* TabRootView.swift in Sources */,
+				63FAF0C429892C36005A6E3E /* Extensions.swift in Sources */,
 				63FAF0B129892965005A6E3E /* BeachApp_2022App.swift in Sources */,
+				63FAF0CE29892CE0005A6E3E /* Team.swift in Sources */,
+				63FAF0C829892C8D005A6E3E /* User.swift in Sources */,
+				63FAF0CA29892C92005A6E3E /* Player.swift in Sources */,
+				63FAF0C629892C74005A6E3E /* AppDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

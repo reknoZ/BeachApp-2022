@@ -11,7 +11,7 @@ import SwiftUI
 struct BeachApp_2022App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabRootView()
         }
     }
 }
